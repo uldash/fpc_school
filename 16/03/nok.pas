@@ -13,9 +13,6 @@ end;
 begin
   A := 27;
   B := 30;
-  writeln(A);
-  writeln(B);
-  writeln(nod(A,B));
   nok := A * B div nod(A, B);
   writeln('çéä(',A ,',' , B,'):', nok);
 end.
