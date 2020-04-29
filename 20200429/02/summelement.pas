@@ -1,10 +1,10 @@
-program unevenop;
+program summelement;
 const
-	n=4;m=5;
+	n=3;m=3;
 var
 	a: array[1..n, 1..m] of integer;
 	i, j: integer;
-        op: longint;
+        sum: longint;
 begin
 for i:=1 to n do
 	begin
@@ -16,11 +16,11 @@ for i:=1 to n do
 	writeln;
 	end;
 writeln;
-op := 1;
+sum := 0;
 for i:=1 to n do
         for j := 1 to m do
-                if a[i,j] mod 2 <> 0 then op := op * a[i, j];
+                if i > j then sum := sum + a[i, j];
 
-writeln('произведение всех нечетных элементов равно: ', op);
+writeln('сумма элементов ниже главной диагонали равнa: ', sum);
 writeln('-----------------------------------------')
 end.
