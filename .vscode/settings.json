@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": true,
+    "pascal.formatter.engine": "ptop",
+    "pascal.formatter.enginePath": "C:\\\\FPC\\\\3.0.4\\\\bin\\\\i386-win32\\\\ptop.exe"
+}
